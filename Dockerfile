@@ -7,6 +7,7 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app/*.jar"]
 
 FROM mysql:8.0
+ARG JAR_FILE
 ENV MYSQL_ROOT_PASSWORD andrea
 ENV MYSQL_DATABASE testdb
 ENV MYSQL_USER andrea
